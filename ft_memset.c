@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 17:36:41 by acuevas           #+#    #+#             */
-/*   Updated: 2026/09/25 20:10:06 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/09/29 19:24:11 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	size_t			i;
 
 	ptr = (unsigned char *)s;
+	i = 0;
 	while (i < n)
 	{
 		ptr[i] = c;
