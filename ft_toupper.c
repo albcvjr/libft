@@ -3,10 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
+/*   By: alberto <alberto@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 14:54:23 by alberto           #+#    #+#             */
-/*   Updated: 2026/09/29 14:58:38 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/09/29 15:40:49 by alberto          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+int	ft_toupper(int c)
+{
+	
+}
