@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 16:31:09 by alberto           #+#    #+#             */
-/*   Updated: 2026/09/29 17:08:20 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/09/29 17:19:13 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strchr(const char *s, int c)
 	while (1)
 	{
 		if (s[i] == c)
-			return (&s[i]);
+			return ((char *)&s[i]);
 		if (s[i] == '\0')
 			return (NULL);
 		i++;
