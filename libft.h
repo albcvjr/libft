@@ -13,8 +13,9 @@ void	*ft_memset(void *s, int c, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 
-size_t	ft_strlcpy(char *d, const char *s, size_t n);
 size_t	ft_strlen(const char *str);
+size_t	ft_strlcpy(char *d, const char *s, size_t n);
+size_t	ft_strlcat(char *d, const char *s, size_t n);
 
 void	ft_bzero(void *s, size_t n);
 #endif
