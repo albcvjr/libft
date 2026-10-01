@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 16:34:09 by alberto           #+#    #+#             */
-/*   Updated: 2026/09/30 12:29:19 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/01 15:20:14 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strdup(const char *s);
+char	*ft_substr(const char *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
 
 void	*ft_memset(void *s, int c, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
