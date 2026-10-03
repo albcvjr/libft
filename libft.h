@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 16:34:09 by alberto           #+#    #+#             */
-/*   Updated: 2026/10/03 17:35:32 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/03 21:00:20 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n);
 int	ft_memcmp(const void *s1, const void *s2, size_t n);
 int	ft_atoi(const char *nptr);
 int	ft_isset(char c, const char *set);
-int	ft_word_count(const char *s);
+
+void	ft_bzero(void *s, size_t n);
 
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
@@ -48,6 +49,6 @@ void	*ft_calloc(size_t n, size_t size);
 size_t	ft_strlen(const char *str);
 size_t	ft_strlcpy(char *d, const char *s, size_t n);
 size_t	ft_strlcat(char *d, const char *s, size_t n);
+size_t	ft_word_count(const char *s, char c);
 
-void	ft_bzero(void *s, size_t n);
 #endif
