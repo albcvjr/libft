@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 19:06:00 by acuevas           #+#    #+#             */
-/*   Updated: 2026/10/02 21:51:17 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/03 17:05:17 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int main()
 	
 	// char	*array_de_strings[5] = {"hola", "viva", "la", "vida", NULL};
 	
-	char *test[3][3] = {{"hola", "que", "tal"}, {"me", "lllamo", "paolo"}, {"me", "lllamo", "maolo"}};
+	char *test[3][3] = {{"hola", "que", "tal"}, {"me", "lllamo", "paolo"}, {"me", "llamo", "paolo"}};
 	
 	printf("esta es la letera d: %c\n", test[2][2][0]);
 
@@ -36,5 +36,3 @@ int main()
 char  	es un caracter de 	1 byte
 char * 	es una puta flecha 8 byte
 */
-
-
