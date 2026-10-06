@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 19:25:48 by acuevas           #+#    #+#             */
-/*   Updated: 2026/10/03 21:00:59 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/06 19:16:26 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ size_t	ft_word_count(const char *s, char c)
 {
 	size_t	i;
 	size_t	word;
-	
+
 	i = 0;
 	word = 0;
 	while (s[i] != '\0')
@@ -29,7 +29,8 @@ size_t	ft_word_count(const char *s, char c)
 			i++;
 	}
 	return (word);
-}/*
+}
+/*
 int	main(int ac, char **av)
 {
 	if (av[1] == NULL)
@@ -44,4 +45,5 @@ int	main(int ac, char **av)
 	w_found = ft_word_count(words, ' ');
 	printf("Found: %d\n", w_found);
 	return (0);
-}*/
+}
+*/

@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 16:34:09 by alberto           #+#    #+#             */
-/*   Updated: 2026/10/03 21:00:20 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/06 19:17:31 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,8 @@ char	*ft_strdup(const char *s);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 char	*ft_strjoin(const char *s1, const char *s2);
 char	*ft_strtrim(const char *s1, const char *set);
+char	*ft_itoa(int n);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 char	**ft_split(const char *s, char c);
 
