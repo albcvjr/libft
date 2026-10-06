@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 15:52:25 by acuevas           #+#    #+#             */
-/*   Updated: 2026/10/02 21:48:49 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/06 20:47:22 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ char	*ft_strtrim(const char *s1, const char *set)
 	char	*dup;
 
 	i = 0;
-	while (s1[i] != '\0' && ft_isset(s1[i], set))
+	while (s1[i] != '\0' && ft_strchr(set, s1[i]))
 		i++;
 	end = ft_strlen(s1);
-	while (end > i && ft_isset(s1[end - 1], set))
+	while (end > i && ft_strchr(set, s1[end - 1]))
 		end--;
 	dup = malloc(end - i + 1);
 	if (dup == NULL)

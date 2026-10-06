@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 16:34:09 by alberto           #+#    #+#             */
-/*   Updated: 2026/10/06 19:17:31 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/06 20:45:34 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ int	ft_tolower(int c);
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
 int	ft_memcmp(const void *s1, const void *s2, size_t n);
 int	ft_atoi(const char *nptr);
-int	ft_isset(char c, const char *set);
 
 void	ft_bzero(void *s, size_t n);
 
