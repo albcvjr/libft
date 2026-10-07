@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/07 11:50:16 by acuevas           #+#    #+#             */
-/*   Updated: 2026/10/07 12:10:33 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/07 12:41:52 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,12 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	
+	t_list	*nn;
+
+	nn = (t_list *)malloc(sizeof(t_list));
+	if (nn == NULL)
+		return (NULL);
+	nn -> content = content;
+	nn -> next = NULL;
+	return (nn);
 }

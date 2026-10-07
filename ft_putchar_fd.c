@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 21:20:05 by acuevas           #+#    #+#             */
-/*   Updated: 2026/10/06 21:31:39 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/07 12:23:37 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	
 	if (fd < 0)
 		return ;
 	write(fd, &c, 1);
