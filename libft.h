@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 16:34:09 by alberto           #+#    #+#             */
-/*   Updated: 2026/10/07 12:46:34 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/07 19:12:34 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <stdio.h>
+# include <unistd.h>
 
 typedef struct s_list
 {
@@ -64,6 +65,5 @@ void	*ft_calloc(size_t n, size_t size);
 size_t	ft_strlen(const char *str);
 size_t	ft_strlcpy(char *d, const char *s, size_t n);
 size_t	ft_strlcat(char *d, const char *s, size_t n);
-size_t	ft_word_count(const char *s, char c);
 
 #endif

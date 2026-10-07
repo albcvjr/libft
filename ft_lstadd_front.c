@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/07 12:44:41 by acuevas           #+#    #+#             */
-/*   Updated: 2026/10/07 12:45:20 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/07 17:50:48 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	
+	if (lst == NULL || new == NULL)
+		return ;
+	new -> next = *lst;
+	*lst = new;
 }
