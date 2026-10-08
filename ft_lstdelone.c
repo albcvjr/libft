@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/08 14:23:57 by acuevas           #+#    #+#             */
-/*   Updated: 2026/10/08 14:24:39 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/08 17:06:10 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	
+	if (lst == NULL)
+		return ;
+	del(lst -> content);
+	free (lst);
 }
