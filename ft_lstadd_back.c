@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/08 01:56:25 by acuevas           #+#    #+#             */
-/*   Updated: 2026/10/08 14:22:27 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/14 18:50:05 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		*lst = new;
 		return ;
 	}
-	while (current -> next != NULL)
-		current = current -> next;
-	current -> next = new;
+	while (current->next != NULL)
+		current = current->next;
+	current->next = new;
 }
