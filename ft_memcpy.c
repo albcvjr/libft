@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 21:00:11 by acuevas           #+#    #+#             */
-/*   Updated: 2026/09/28 22:30:28 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/16 21:32:26 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	d = (unsigned char *) dest;
 	s = (unsigned char *) src;
+	if (dest == NULL && src == NULL)
+		return (NULL);
 	while (i < n)
 	{
 		d[i] = s[i];
