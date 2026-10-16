@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 17:20:47 by acuevas           #+#    #+#             */
-/*   Updated: 2026/09/29 17:49:33 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/16 21:09:20 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,19 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*resultado;
-	int		i;
+	char			*result;
+	unsigned char	uc;
+	int				i;
 
-	resultado = NULL;
+	result = NULL;
+	uc = (unsigned char)c;
 	i = 0;
 	while (1)
 	{
-		if (s[i] == c)
-			resultado = (char *)&s[i];
+		if ((unsigned char)s[i] == uc)
+			result = (char *)&s[i];
 		if (s[i] == '\0')
-			return (resultado);
+			return (result);
 		i++;
 	}
 }
