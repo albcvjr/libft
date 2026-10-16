@@ -208,7 +208,7 @@ Estas fuentes permiten consultar las especificaciones de las funciones, comprend
 
 ### Uso de inteligencia artificial
 
-Se ha utilizado ChatGPT como herramienta de apoyo durante el aprendizaje y desarrollo del proyecto.
+Se ha utilizado ChatGPT y Gemini como herramientas de apoyo durante el aprendizaje y desarrollo del proyecto.
 
 Su utilización se ha centrado en:
 
