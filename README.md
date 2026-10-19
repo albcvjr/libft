@@ -83,6 +83,10 @@ Para compilar el programa desde la raíz del proyecto:
 ```bash
 cc -Wall -Wextra -Werror main.c -L. -lft -I. -o test
 ```
+-L. ------> Busca bibliotecas en el directorio actual.
+-lft -----> Enlazar la biblioteca `libft.a`.
+-I -------> Indica donde buscar los archivos de cabecera, como `libft.h`.
+-o test --> Establece el nombre del ejecutable resultante.
 
 Para ejecutar el programa:
 
