@@ -84,8 +84,8 @@ Para compilar el programa desde la raíz del proyecto:
 cc -Wall -Wextra -Werror main.c -L. -lft -I. -o test
 ```
 -L. ------> Busca bibliotecas en el directorio actual.
--lft -----> Enlazar la biblioteca `libft.a`.
--I -------> Indica donde buscar los archivos de cabecera, como `libft.h`.
+-lft -----> Enlaza la biblioteca `libft.a`.
+-I -------> Indica dónde buscar los archivos de cabecera, como `libft.h`.
 -o test --> Establece el nombre del ejecutable resultante.
 
 Para ejecutar el programa:
@@ -156,14 +156,14 @@ Estas funciones permiten convertir entre representaciones textuales y valores nu
 
 Estas funciones permiten generar nuevas cadenas o aplicar operaciones a los caracteres de una cadena existente.
 
-| Función      | Descripción 																	  |
-|--------------|----------------------------------------------------------------------------------|
-| `ft_substr`  | Crea una subcadena a partir de una posición y una longitud determinadas. 		  |
-| `ft_strjoin` | Crea una nueva cadena concatenando dos cadenas existentes. 					  |
-| `ft_strtrim` | Crea una copia de una cadena eliminando determinados caracteres de sus extremos. |
-| `ft_split`   | Divide una cadena en varias subcadenas utilizando un separador. 				  |
-| `ft_strmapi` | Crea una nueva cadena aplicando una función a cada carácter y su índice. 		  |
-| `ft_striteri`| Aplica una función a cada carácter, proporcionando su índice y su dirección. 	  |
+| Función      | Descripción 																	                 |
+|--------------|-------------------------------------------------------------------------------------------------|
+| `ft_substr`  | Crea una subcadena a partir de una posición y una longitud determinadas. 		                 |
+| `ft_strjoin` | Crea una nueva cadena concatenando dos cadenas existentes. 					                 |
+| `ft_strtrim` | Crea una copia de una cadena eliminando determinados caracteres de sus extremos.                |
+| `ft_split`   | Divide una cadena en varias subcadenas utilizando un separador. 				                 |
+| `ft_strmapi` | Crea una nueva cadena aplicando una función a cada carácter de la cadena de origen.             |
+| `ft_striteri`| Aplica una función a cada carácter de la cadena original, permitiendo modificarla directamente. |
 
 ### 6. Escritura mediante descriptores de archivo
 

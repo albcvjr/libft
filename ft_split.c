@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 19:06:00 by acuevas           #+#    #+#             */
-/*   Updated: 2026/10/07 19:54:25 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/19 20:26:55 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,9 +83,19 @@ char	**ft_split(const char *s, char c)
 	words = ft_word_count(s, c);
 	result = (char **)malloc(sizeof(char *) * (words + 1));
 	if (result == NULL)
-	{
-		free(result);
 		return (NULL);
-	}
 	return (fill_split(result, s, c));
 }
+
+/*#include <stdio.h>
+int	main(void)
+{
+	char **res;
+	unsigned int i = 0;
+	
+	res = ft_split("Hola alberto o o o", ' ');
+	while (res && res[i])
+		printf("Palabra: %s\n", res[i++]);
+	ft_free_all(res, i);
+	return (0);
+}*/

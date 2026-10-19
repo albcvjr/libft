@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 21:00:11 by acuevas           #+#    #+#             */
-/*   Updated: 2026/10/19 12:57:32 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/19 21:34:10 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,16 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 }
 
 /*
-if (dest == NULL && src == NULL)
+if (dest == NULL || src == NULL)
 	return (NULL);
 #include <stdio.h>
 #include <string.h>
+char *ptr = NULL;
+char *ptr2 = NULL;
 int	main(void)
 {
-	printf("%p\n", memcpy(NULL, "hola", 3));
-	printf("%p\n", ft_memcpy(NULL, "hola", 3));
+		printf("%p\n", ft_memcpy(ptr, ptr2, 3));
+		printf("%p\n", memcpy(ptr, ptr2, 3));
 	return (0);
-}*/
+}
+*/
