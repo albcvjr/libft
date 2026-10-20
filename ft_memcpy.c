@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 21:00:11 by acuevas           #+#    #+#             */
-/*   Updated: 2026/10/19 21:34:10 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/20 14:28:25 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,12 @@ if (dest == NULL || src == NULL)
 	return (NULL);
 #include <stdio.h>
 #include <string.h>
-char *ptr = NULL;
-char *ptr2 = NULL;
+char ptr[] = "adios";
+char ptr2[] = "hola";
 int	main(void)
 {
-		printf("%p\n", ft_memcpy(ptr, ptr2, 3));
-		printf("%p\n", memcpy(ptr, ptr2, 3));
+		printf("%p\n", ft_memcpy(ptr, ptr2, 2));
+		printf("%p\n", memcpy(ptr, ptr2, 2));
 	return (0);
 }
 */
