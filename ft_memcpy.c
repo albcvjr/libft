@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 21:00:11 by acuevas           #+#    #+#             */
-/*   Updated: 2026/10/20 14:28:25 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/20 18:24:38 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 /*
 if (dest == NULL || src == NULL)
 	return (NULL);
+*/
+/*
 #include <stdio.h>
 #include <string.h>
 char ptr[] = "adios";
