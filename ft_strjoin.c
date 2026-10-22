@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 15:17:38 by acuevas           #+#    #+#             */
-/*   Updated: 2026/10/01 18:26:41 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/22 20:04:54 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strjoin(const char *s1, const char *s2)
 
 	len1 = ft_strlen(s1);
 	len2 = ft_strlen(s2);
+	//Aqui tambien vas a tener que añadir una proteccion para NULL
+	//y reducir las lineas 
 	i = 0;
 	join = malloc(len1 + len2 + 1);
 	if (join == NULL)

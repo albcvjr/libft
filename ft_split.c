@@ -6,7 +6,7 @@
 /*   By: acuevas <acuevas@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 19:06:00 by acuevas           #+#    #+#             */
-/*   Updated: 2026/10/19 20:26:55 by acuevas          ###   ########.fr       */
+/*   Updated: 2026/10/22 18:21:56 by acuevas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,3 +99,16 @@ int	main(void)
 	ft_free_all(res, i);
 	return (0);
 }*/
+#include <stdio.h>
+int	main(void)
+{
+	char 			**res;
+	unsigned int	i;
+	
+	i = 0;
+	res = ft_split("hola que  ase ", ' ');
+	while (res && res[i])
+		printf("%s\n", res[i++]);
+	ft_free_all(res, i);
+	return(0);
+}
